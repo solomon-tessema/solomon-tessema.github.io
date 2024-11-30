@@ -57,8 +57,22 @@
       margin: 0 auto;
       padding: 20px 0;
     }
-    section {
-      padding: 20px 0;
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px 0;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .home img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+    .bio {
+      max-width: 70%;
     }
     .section-title {
       color: #0074D9;
@@ -100,16 +114,28 @@
 <!-- Navigation Bar -->
 <nav>
   <div style="text-align: center;">
+    <a href="#home">Home</a>
     <a href="#resume">Resume</a>
+    <a href="#ai-ml">AI/ML</a>
+    <a href="#data-visualization">Data Visualization</a>
     <a href="#research">Research</a>
     <a href="#blog">Blog</a>
-    <a href="#data-visualization">Data Visualization</a>
-    <a href="#ai-ml">AI/ML</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="container">
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home">
+      <img src="Profile Picture.png" alt="Solomon Tessema's Profile Picture">
+      <div class="bio">
+        <h2 class="section-title">Welcome!</h2>
+        <p>Hello, I'm Solomon Tessema, a Data Analyst and AI Enthusiast with over 10 years of experience in transforming raw data into actionable insights. My expertise spans mortgage servicing, credit analytics, healthcare, and retail industries. I specialize in Python-based analytics, machine learning, and creating stunning data visualizations to support decision-making. Let's explore the world of data together!</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Resume Section -->
   <section id="resume">
     <h2 class="section-title">Resume</h2>
@@ -137,6 +163,18 @@
     </ul>
   </section>
 
+  <!-- AI/ML Section -->
+  <section id="ai-ml">
+    <h2 class="section-title">AI & Machine Learning</h2>
+    <p>Dive into my AI/ML projects, including natural language processing and deep learning experiments. Explore applications in predictive modeling and automation.</p>
+  </section>
+
+  <!-- Data Visualization Section -->
+  <section id="data-visualization">
+    <h2 class="section-title">Data Visualization</h2>
+    <p>Explore interactive dashboards and visualizations highlighting financial trends, healthcare analytics, and retail insights.</p>
+  </section>
+
   <!-- Research Section -->
   <section id="research">
     <h2 class="section-title">Research</h2>
@@ -147,18 +185,6 @@
   <section id="blog">
     <h2 class="section-title">Blog</h2>
     <p>Read my blog for thoughts on data science, AI trends, and practical applications of technology. Content coming soon!</p>
-  </section>
-
-  <!-- Data Visualization Section -->
-  <section id="data-visualization">
-    <h2 class="section-title">Data Visualization</h2>
-    <p>Explore interactive dashboards and visualizations highlighting financial trends, healthcare analytics, and retail insights.</p>
-  </section>
-
-  <!-- AI/ML Section -->
-  <section id="ai-ml">
-    <h2 class="section-title">AI & Machine Learning</h2>
-    <p>Dive into my AI/ML projects, including natural language processing and deep learning experiments. Explore applications in predictive modeling and automation.</p>
   </section>
 
   <!-- Contact Section -->
