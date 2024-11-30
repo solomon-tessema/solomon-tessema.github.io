@@ -4,13 +4,13 @@
 
 
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f8f9fa;
-      line-height: 1.6;
-    }
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
     nav {
       position: sticky;
       top: 0;
@@ -108,7 +108,6 @@ section {
       flex-wrap: wrap;
       gap: 20px;
       justify-content: space-between;
-      max-width: 1200px;
       margin: 0 auto;
     }
     article {
@@ -152,21 +151,16 @@ article {
   max-width: calc(22% - 20px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   article {
-    flex: 0 1 calc(33.33% - 20px); /* 3 tiles per row on medium screens */
-    max-width: calc(33.33% - 20px);
+    flex: 0 1 calc(30% - 20px); /* 3 tiles per row on medium screens */
+    max-width: calc(30% - 20px);
   }
 }
-    @media (max-width: 768px) {
-      article {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-      }
-    }
     @media (max-width: 480px) {
       article {
-        flex: 1 1 100%;
-        max-width: 100%;
+        flex: 1 1 calc(98% - 20px);
+        max-width: calc(98% - 20px);
       }
     }
+ 
