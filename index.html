@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solomon Tessema - Resume</title>
+  <title>Solomon Tessema - Portfolio</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
@@ -13,30 +13,23 @@
     .header {
       background-color: #0074D9;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
     .header h1 {
-      margin: 0;
       font-size: 2.5rem;
     }
     .header p {
       margin: 5px 0;
     }
-    a {
-      text-decoration: none;
+    .navbar-custom {
+      background-color: #333;
     }
-    a:hover {
-      text-decoration: underline;
+    .navbar-custom .nav-link {
+      color: white;
     }
-    .section-title {
+    .navbar-custom .nav-link:hover {
       color: #0074D9;
-      margin-top: 30px;
-      border-bottom: 2px solid #0074D9;
-      padding-bottom: 5px;
-    }
-    .experience {
-      margin-bottom: 20px;
     }
     footer {
       background-color: #f8f9fa;
@@ -44,102 +37,102 @@
       text-align: center;
       margin-top: 20px;
     }
+    .tab-content {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
 
+<!-- Header -->
 <div class="header">
   <h1>Solomon Tessema</h1>
-  <p>Data Analyst | Frisco, TX | <a href="mailto:solomon.tessema@outlook.com" class="text-white">solomon.tessema@outlook.com</a> | +1 214 429 9312</p>
+  <p>Data Analyst | AI Enthusiast | Problem Solver</p>
+  <p><a href="mailto:solomon.tessema@outlook.com" class="text-white">solomon.tessema@outlook.com</a> | +1 214 429 9312</p>
   <p><a href="https://www.linkedin.com/in/solomon-tessema" class="text-white">LinkedIn</a> | <a href="https://github.com/solomon-tessema" class="text-white">GitHub</a></p>
 </div>
 
-<div class="container mt-4">
-  <!-- About Section -->
-  <section>
-    <h2 class="section-title">About Me</h2>
-    <p>Data Analyst/Engineer with 8+ years of experience in mortgage servicing, credit analytics, manufacturing, healthcare, and retail industries. Specialized in data-driven insights, designing robust data pipelines, and deploying advanced machine learning models. Proficient in Python, SQL, data visualization, and statistical analysis.</p>
-  </section>
-
-  <!-- Experience Section -->
-  <section>
-    <h2 class="section-title">Experience</h2>
-    
-    <div class="experience">
-      <h4>Metrocare Services <small class="text-muted">(Sep 2021 – Present)</small></h4>
-      <p><strong>Data Analyst</strong></p>
-      <ul>
-        <li>Developed and optimized data tools for healthcare, supporting mental health initiatives.</li>
-        <li>Applied Python-based analytics and AI tools to improve patient segmentation and treatment targeting.</li>
-        <li>Utilized NumPy, pandas, Matplotlib, TensorFlow for actionable insights and complex modeling.</li>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home" data-bs-toggle="tab">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#research" data-bs-toggle="tab">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog" data-bs-toggle="tab">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#data-visualization" data-bs-toggle="tab">Data Visualization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ai-ml" data-bs-toggle="tab">AI/ML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-bs-toggle="tab">Contact</a>
+        </li>
       </ul>
     </div>
+  </div>
+</nav>
 
-    <div class="experience">
-      <h4>Caliber Home Loans <small class="text-muted">(Mar 2021 – Sep 2021)</small></h4>
-      <p><strong>Data Analyst</strong></p>
-      <ul>
-        <li>Improved predictive model accuracy in mortgage servicing with TensorFlow and Scikit-learn.</li>
-        <li>Boosted decision-making efficiency through actionable data insights visualized using Seaborn.</li>
-        <li>Streamlined loan processing workflows, reducing processing time and enhancing customer satisfaction.</li>
-      </ul>
+<!-- Tab Content -->
+<div class="container">
+  <div class="tab-content">
+    <!-- Home Section -->
+    <div class="tab-pane fade show active" id="home">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Hi, I'm Solomon Tessema, a Data Analyst with over 8 years of experience specializing in transforming raw data into actionable insights. Explore my work, research, and insights through the tabs above.</p>
     </div>
 
-    <div class="experience">
-      <h4>Lennox International <small class="text-muted">(Jun 2019 – Aug 2020)</small></h4>
-      <p><strong>Data Scientist</strong></p>
-      <ul>
-        <li>Conducted exploratory data analysis for HVAC product lifecycle management using Pandas and NumPy.</li>
-        <li>Built and deployed machine learning models using TensorFlow to optimize engineering processes.</li>
-        <li>Collaborated with data engineers to preprocess and clean large datasets for product design insights.</li>
-      </ul>
+    <!-- Research Section -->
+    <div class="tab-pane fade" id="research">
+      <h2>Research</h2>
+      <p>I have conducted extensive research in areas such as predictive modeling, risk assessment, and data-driven decision-making. Stay tuned for publications and insights into data science methodologies.</p>
     </div>
 
-    <div class="experience">
-      <h4>Digital Matrix Systems <small class="text-muted">(Jan 2018 – Dec 2018)</small></h4>
-      <p><strong>Data Analyst</strong></p>
-      <ul>
-        <li>Developed machine learning models achieving 85% accuracy for financial risk predictions.</li>
-        <li>Utilized Pandas and Scikit-learn to preprocess large datasets and enhance decision-making processes.</li>
-        <li>Boosted efficiency by implementing robust data cleaning pipelines and feature engineering.</li>
-      </ul>
+    <!-- Blog Section -->
+    <div class="tab-pane fade" id="blog">
+      <h2>Blog</h2>
+      <p>Read about my thoughts and experiences in the world of data analytics, AI, and beyond. Coming soon!</p>
     </div>
 
-    <div class="experience">
-      <h4>GXT LTD (Now LBJ Express) <small class="text-muted">(May 2014 – Dec 2017)</small></h4>
-      <p><strong>Geospatial Data/Software Developer</strong></p>
+    <!-- Data Visualization Section -->
+    <div class="tab-pane fade" id="data-visualization">
+      <h2>Data Visualization</h2>
+      <p>Explore interactive visualizations and dashboards I've created to bring data to life. From financial trends to healthcare analytics, these visuals showcase the power of data storytelling.</p>
+    </div>
+
+    <!-- AI/ML Section -->
+    <div class="tab-pane fade" id="ai-ml">
+      <h2>AI & Machine Learning</h2>
+      <p>Dive into my AI/ML projects, including predictive modeling, natural language processing, and deep learning applications. Highlights include my work with TensorFlow and Scikit-learn.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="tab-pane fade" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate or discuss potential opportunities, feel free to reach out!</p>
       <ul>
-        <li>Designed web applications for geospatial data processing using Python and ArcGIS APIs.</li>
-        <li>Managed SQL Server databases for .NET applications, enhancing engineering knowledge management.</li>
-        <li>Developed tools to process utility layouts and topographic data for telecom infrastructure design.</li>
+        <li>Email: <a href="mailto:solomon.tessema@outlook.com">solomon.tessema@outlook.com</a></li>
+        <li>Phone: +1 214 429 9312</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/solomon-tessema">linkedin.com/in/solomon-tessema</a></li>
+        <li>GitHub: <a href="https://github.com/solomon-tessema">github.com/solomon-tessema</a></li>
       </ul>
     </div>
-  </section>
-
-  <!-- Education Section -->
-  <section>
-    <h2 class="section-title">Education</h2>
-    <ul>
-      <li><strong>MS: Mathematics</strong> - Indiana State University, August 2022</li>
-      <li><strong>BA: Mathematics</strong> - Southern New Hampshire University, August 2020</li>
-      <li><strong>AS: Software Engineering</strong> - Dallas College, December 2017</li>
-    </ul>
-  </section>
-
-  <!-- Skills Section -->
-  <section>
-    <h2 class="section-title">Skills</h2>
-    <ul class="list-unstyled">
-      <li><strong>Programming:</strong> Python, SQL, .NET</li>
-      <li><strong>Data Tools:</strong> Pandas, NumPy, TensorFlow, Scikit-learn</li>
-      <li><strong>Visualization:</strong> Matplotlib, Seaborn</li>
-      <li><strong>Other:</strong> Data Mining, Predictive Modeling, Machine Learning</li>
-    </ul>
-  </section>
+  </div>
 </div>
 
 <footer>
-  <p>&copy; 2024 Solomon Tessema | <a href="mailto:solomon.tessema@outlook.com">Email Me</a></p>
+  <p>&copy; 2024 Solomon Tessema | Built with Bootstrap</p>
 </footer>
 
 <!-- Bootstrap JS -->
