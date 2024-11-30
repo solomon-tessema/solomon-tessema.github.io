@@ -99,3 +99,74 @@ section {
   border-radius: 5px;
 }
  
+#blog {
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    .blog-listing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    article {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    article h2 {
+      color: #0074D9;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    article h2 a {
+      text-decoration: none;
+      color: #0074D9;
+    }
+    article p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+    article a.read-more {
+      text-decoration: none;
+      color: white;
+      background: #0074D9;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+article {
+  flex: 0 1 calc(22% - 20px); /* Ensures 4 tiles fit in one row */
+  max-width: calc(22% - 20px);
+}
+
+@media (max-width: 1024px) {
+  article {
+    flex: 0 1 calc(33.33% - 20px); /* 3 tiles per row on medium screens */
+    max-width: calc(33.33% - 20px);
+  }
+}
+    @media (max-width: 768px) {
+      article {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      article {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
