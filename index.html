@@ -4,95 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solomon Tessema - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f8f9fa;
-      line-height: 1.6;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background-color: white;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #0074D9;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 70%;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-    .home {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 30px 0;
-      padding: 20px;
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-    .home img {
-      width: 300px; /* Twice the size */
-      height: 300px; /* Ensures perfect circle */
-      border-radius: 50%; /* Makes the image circular */
-      border: 2px solid #ddd; /* Adds a subtle border */
-      object-fit: cover; /* Ensures the image fills the circle properly */
-    }
-    .bio {
-      max-width: 70%;
-    }
-    .section-title {
-      color: #0074D9;
-      border-bottom: 2px solid #0074D9;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: white;
-      border-top: 1px solid #ddd;
-    }
-    footer a {
-      color: #0074D9;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <nav>
   <div>
-    <a href="#home">Home</a>
+    <a href="#home">Biography</a>
     <a href="#resume">Resume</a>
-    <a href="#ai-ml">AI/ML</a>
-    <a href="#data-visualization">Data Visualization</a>
     <a href="#research">Research</a>
     <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
@@ -100,53 +22,137 @@
 </nav>
 
 <div class="container">
-  <!-- Home Section -->
+  <!-- Biography Section -->
   <section id="home">
     <div class="home">
       <img src="Profile Picture.png" alt="Solomon Tessema's Profile Picture">
       <div class="bio">
-        <h2 class="section-title">Welcome!</h2>
-        <p>Hello, I'm Solomon Tessema, a Data Analyst and AI Enthusiast with over 8 years of experience in transforming raw data into actionable insights. My expertise spans mortgage servicing, credit analytics, healthcare, and retail industries. I specialize in Python-based analytics, machine learning, and creating stunning data visualizations to support decision-making. Let's explore the world of data together!</p>
+        <h2 class="section-title">Biography</h2>
+
+        <p>I'm Solomon Tessema, a Data Analyst and AI Enthusiast with over 8 years of experience transforming raw data into actionable insights. My career spans mortgage servicing, credit analytics, healthcare, and retail industries, where I've leveraged data science to solve complex problems, enhance decision-making, and drive efficiency.</p>
+
+        <p>With expertise in Python-based analytics, machine learning, and creating stunning data visualizations, I specialize in building predictive models, cleaning and analyzing large datasets, and crafting interactive dashboards that make data accessible and impactful. My skill set includes Python, TensorFlow, Scikit-learn, SQL, Tableau, and advanced data visualization libraries like Matplotlib and Seaborn.</p>
+
+        <p>Academically, I hold an MS in Mathematics from Indiana State University, a BA in Mathematics from Southern New Hampshire University, and an AS in Software Engineering from Dallas College. These foundations have empowered me to bridge mathematical rigor with practical data science applications.</p>
+
+        <p>Beyond my professional life, I love blending creativity and technology. I design and build geodesic domes, engage in astrophotography, and enjoy spending time building robots with my kids. These hobbies not only keep me curious but also inspire new ways of thinking about problem-solving and innovation.</p>
+
+        <p>Whether it's tackling data challenges, exploring the stars, or building something tangible, I'm passionate about bringing ideas to life and making a meaningful impact.</p>
       </div>
     </div>
   </section>
 
   <!-- Resume Section -->
-  <section id="resume">
-    <h2 class="section-title">Resume</h2>
-    <header>
-      <h1>Solomon Tessema</h1>
-      <p>Data Analyst | AI Enthusiast | Problem Solver</p>
-      <p><a href="mailto:solomon.tessema@outlook.com">solomon.tessema@outlook.com</a> | +1 214 429 9312</p>
-      <p><a href="https://www.linkedin.com/in/solomon-tessema">LinkedIn</a> | <a href="https://github.com/solomon-tessema">GitHub</a></p>
-    </header>
-    <h3>Experience</h3>
-    <ul>
-      <li><strong>Metrocare Services (Sep 2021 – Present)</strong><br>Data Analyst - Developed healthcare data tools, applied Python analytics, and improved mental health service delivery.</li>
-      <li><strong>Caliber Home Loans (Mar 2021 – Sep 2021)</strong><br>Data Analyst - Enhanced predictive models, streamlined workflows, and improved decision-making processes.</li>
-      <li><strong>Lennox International (Jun 2019 – Aug 2020)</strong><br>Data Scientist - Conducted EDA, deployed machine learning models, and optimized HVAC engineering processes.</li>
-      <li><strong>Digital Matrix Systems (Jan 2018 – Dec 2018)</strong><br>Data Analyst - Built predictive financial models and improved data quality with preprocessing techniques.</li>
-      <li><strong>GXT LTD (May 2014 – Dec 2017)</strong><br>Geospatial Data/Software Developer - Designed geospatial tools and managed SQL databases for telecom projects.</li>
-    </ul>
+<section id="resume" style="background-color: white; padding: 40px; border-radius: 5px; margin: 20px 0;">
+  <div style="display: flex; gap: 30px; flex-wrap: wrap;">
 
-    <h3>Education</h3>
-    <ul>
-      <li><strong>MS: Mathematics</strong> - Indiana State University, August 2022</li>
-      <li><strong>BA: Mathematics</strong> - Southern New Hampshire University, August 2020</li>
-      <li><strong>AS: Software Engineering</strong> - Dallas College, December 2017</li>
-    </ul>
+    <!-- Left Column -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="color: #0074D9;">Experience</h3>
+      <ul>
+        <li>
+          <strong>Metrocare Services (Sep 2021 – Present)</strong><br>
+          <em>Data Analyst</em>
+          <ul>
+            <li>Developed healthcare analytics tools using Python to improve mental health service delivery.</li>
+            <li>Created interactive Tableau dashboards for real-time metrics visualization.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Caliber Home Loans (Mar 2021 – Sep 2021)</strong><br>
+          <em>Data Analyst</em>
+          <ul>
+            <li>Enhanced predictive models for mortgage servicing, improving accuracy by 15%.</li>
+            <li>Streamlined data cleaning processes, reducing pipeline processing time by 30%.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Lennox International (Jun 2019 – Aug 2020)</strong><br>
+          <em>Data Scientist</em>
+          <ul>
+            <li>Conducted exploratory data analysis (EDA) on HVAC lifecycle data.</li>
+            <li>Developed predictive maintenance models using TensorFlow.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Digital Matrix Systems (Jan 2018 – Dec 2018)</strong><br>
+          <em>Data Analyst</em>
+          <ul>
+            <li>Built predictive financial models, achieving 85% accuracy.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>GXT LTD (May 2014 – Dec 2017)</strong><br>
+          <em>Geospatial Data/Software Developer</em>
+          <ul>
+            <li>Developed geospatial tools for telecom infrastructure projects.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-    <h3>Skills</h3>
-    <ul>
-      <li>Python, NumPy, Pandas, TensorFlow, Scikit-learn</li>
-      <li>SQL, .NET, Data Mining, Predictive Modeling</li>
-      <li>Matplotlib, Seaborn, Machine Learning</li>
-    </ul>
-  </section>
+    <!-- Right Column -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="color: #0074D9;">Education</h3>
+      <ul>
+        <li>
+          <strong>MS: Mathematics</strong> - Indiana State University, August 2022<br>
+          Focused on advanced statistical modeling, data analysis techniques, and computational methods for real-world problem-solving.
+        </li>
+        <li>
+          <strong>BA: Mathematics</strong> - Southern New Hampshire University, August 2020<br>
+          Coursework included linear algebra, probability, and optimization with an emphasis on applications in data science and analytics.
+        </li>
+        <li>
+          <strong>AS: Software Engineering</strong> - Dallas College, December 2017<br>
+          Gained expertise in programming, database management, and software development methodologies.
+        </li>
+      </ul>
 
-<section id = "data-visualization">
-<div class='tableauPlaceholder' id='viz1732944667233' style='position: relative'><noscript><a href='#'><img alt='GXT Projects Follow up ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GX&#47;GXTProjectsFollowUp&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GXTProjectsFollowUp&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GX&#47;GXTProjectsFollowUp&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1732944667233');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <h3 style="color: #0074D9;">Skills</h3>
+      <ul>
+        <li><strong>Programming:</strong> Python, SQL, .NET</li>
+        <li><strong>Data Science Libraries:</strong> Pandas, NumPy, TensorFlow, Scikit-learn</li>
+        <li><strong>Data Visualization:</strong> Tableau, Matplotlib, Seaborn</li>
+        <li><strong>Other:</strong> Data Cleaning, Feature Engineering, Predictive Modeling</li>
+        <li><strong>Soft Skills:</strong> Problem-Solving, Communication, Team Collaboration</li>
+      </ul>
+
+      <h3 style="color: #0074D9;">Certifications</h3>
+      <ul>
+        <li><strong>Google Data Analytics Professional Certificate</strong> - Coursera</li>
+        <li><strong>TensorFlow Developer Certificate</strong> - TensorFlow</li>
+        <li><strong>Microsoft Certified: Data Analyst Associate</strong> - Microsoft</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
+
+
+
+<section id = "research">
+ 
+<blockquote style="font-style: italic; color: #555; margin: 20px auto; text-align: center; max-width: 600px;">
+  "Data is the oil of the 21st century, and analytics is the combustion engine."
+</blockquote>
+<div class='tableauPlaceholder' id='viz1732944667233' style='position: relative'><noscript><a href='#'><img alt='GXT Projects Follow up ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GX&#47;GXTProjectsFollowUp&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GXTProjectsFollowUp&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GX&#47;GXTProjectsFollowUp&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1732944667233');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+ 
+</section>
+
+<section id="contact" style="background-color: white; padding: 40px; border-radius: 5px; margin: 20px 0;">
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="background-color: #f0f0f0; width: 300px; height: 300px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; text-align: center; font-size: 1rem; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <p style="margin: 10px 0;"><i class="fas fa-map-marker-alt" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i>Frisco, TX 75035</p>
+      <p style="margin: 10px 0;"><i class="fas fa-phone" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i><a href="tel:+12144299312" style="text-decoration: none; color: black;">+1 214 429 9312</a></p>
+      <p style="margin: 10px 0;"><i class="fab fa-linkedin" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i><a href="https://www.linkedin.com/in/solomon-tessema" target="_blank" style="text-decoration: none; color: black;">linkedin.com/in/solomon-tessema</a></p>
+      <p style="margin: 10px 0;"><i class="fas fa-envelope" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i><a href="mailto:solomon.tessema@outlook.com" style="text-decoration: none; color: black;">solomon.tessema@outlook.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+
 </div>
 
 
