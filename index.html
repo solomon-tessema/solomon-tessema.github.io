@@ -13,11 +13,6 @@
       background-color: #f8f9fa;
       line-height: 1.6;
     }
-    .container {
-      max-width: 70%;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
     header {
       background-color: white;
       padding: 20px;
@@ -41,10 +36,12 @@
       text-decoration: underline;
     }
     nav {
-      text-align: center;
-      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
       border-bottom: 1px solid #ddd;
-      background-color: #f8f9fa;
+      padding: 10px 0;
     }
     nav a {
       margin: 0 15px;
@@ -54,6 +51,11 @@
     }
     nav a:hover {
       text-decoration: underline;
+    }
+    .container {
+      max-width: 70%;
+      margin: 0 auto;
+      padding: 20px 0;
     }
     section {
       padding: 20px 0;
@@ -95,13 +97,16 @@
   <p><a href="https://www.linkedin.com/in/solomon-tessema">LinkedIn</a> | <a href="https://github.com/solomon-tessema">GitHub</a></p>
 </header>
 
+<!-- Navigation Bar -->
 <nav>
-  <a href="#resume">Resume</a>
-  <a href="#research">Research</a>
-  <a href="#blog">Blog</a>
-  <a href="#data-visualization">Data Visualization</a>
-  <a href="#ai-ml">AI/ML</a>
-  <a href="#contact">Contact</a>
+  <div style="text-align: center;">
+    <a href="#resume">Resume</a>
+    <a href="#research">Research</a>
+    <a href="#blog">Blog</a>
+    <a href="#data-visualization">Data Visualization</a>
+    <a href="#ai-ml">AI/ML</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
 <div class="container">
