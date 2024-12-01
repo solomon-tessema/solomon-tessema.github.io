@@ -1,4 +1,16 @@
-    html {
+/*
+color scheme
+from kelly adams website https://www.kellyjadams.com/
+dark blue photo background: #3d6194
+dark blue text background: #0f5ca0
+
+light blue background: #f4faff
+gray text: #464b4b
+hyper link: #83a8de
+
+*/   
+
+ html {
   scroll-behavior: smooth;
 }
 
@@ -7,7 +19,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #555;
   background-color: #f8f9fa;
   line-height: 1.6;
 }
@@ -15,15 +27,16 @@ body {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background-color: white;
+      background-color: #1b75bb;
       border-bottom: 1px solid #ddd;
       padding: 10px 0;
       text-align: center;
+
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #0074D9;
+      color: white;
       font-size: 1.1rem;
     }
     nav a:hover {
@@ -164,3 +177,5 @@ article {
       }
     }
  
+
+

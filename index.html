@@ -15,40 +15,42 @@
 <!-- Navigation Bar -->
 <nav>
   <div>
-    <a href="#home">Biography</a>
+    <a href="#home">Home</a>
     <a href="#resume">Resume</a>
-    <a href="#research">Research</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="container">
-  <!-- Biography Section -->
-  <section id="home">
-    <div class="home">
-      <img src="Profile Picture.png" alt="Solomon Tessema's Profile Picture">
-	
-      <div class="bio">
- 
-<blockquote style="font-style: italic; color: #555; margin: 20px auto; text-align: center; max-width: 600px;">
- "Today, we mine something more precious than diamonds: data. Like marble, we polish, shape, and sculpt it to reveal its meaning and power."
-</blockquote>
-
-        <p>I'm Solomon Tessema, a Data Analyst and AI Enthusiast with over 8 years of experience transforming raw data into actionable insights. My career spans mortgage servicing, credit analytics, healthcare, and retail industries, where I've leveraged data science to solve complex problems, enhance decision-making, and drive efficiency.</p>
-
-        <p>With expertise in Python-based analytics, machine learning, and creating stunning data visualizations, I specialize in building predictive models, cleaning and analyzing large datasets, and crafting interactive dashboards that make data accessible and impactful. My skill set includes Python, TensorFlow, Scikit-learn, SQL, Tableau, and advanced data visualization libraries like Matplotlib and Seaborn.</p>
-
-        <p>Academically, I hold an MS in Mathematics from Indiana State University, a BA in Mathematics from Southern New Hampshire University, and an AS in Software Engineering from Dallas College. These foundations have empowered me to bridge mathematical rigor with practical data science applications.</p>
-
-        <p>Beyond my professional life, I love blending creativity and technology. I design and build geodesic domes, engage in astrophotography, and enjoy spending time building robots with my kids. These hobbies not only keep me curious but also inspire new ways of thinking about problem-solving and innovation.</p>
-
-        <p>Whether it's tackling data challenges, exploring the stars, or building something tangible, I'm passionate about bringing ideas to life and making a meaningful impact.</p>
-      </div>
+<section id="home" style="background-color: white; padding: 40px; border-radius: 5px; margin: 20px 0;">
+ <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+    <!-- Left Section: Profile Picture -->
+    <div style="flex: 1; max-width: 33%; display: flex; flex-direction: column; align-items: center;">
+      <img src="Profile Picture.png" alt="Solomon Tessema's Profile Picture" 
+        style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+      <a href="(Data Scientist) Solomon Tessema.pdf" download 
+        style="text-decoration: none; background-color: #1b75bb; color: white; padding: 10px 20px; border-radius: 5px; font-size: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+        Download Resume
+      </a>
     </div>
-  </section>
 
-  <!-- Resume Section -->
+    <!-- Right Section: Bio -->
+    <div class="bio" style="flex: 2; max-width: 66%; padding-left: 20px; padding-bottom: 20px;">
+      <blockquote style="font-style: italic; color: #555; margin: 20px 0; text-align: center; max-width: 100%;">
+        "Today, we mine something more precious than diamonds: data. Like marble, we polish, shape, and sculpt it to reveal its meaning and power."
+      </blockquote>
+      <p>I’m Solomon Tessema, a Data Scientist and AI Developer with over 10 years of experience transforming raw data into actionable insights across mortgage servicing, credit analytics, healthcare, and retail. My expertise lies in Python-based analytics, machine learning, and data visualization to support decision-making and solve complex challenges.</p>
+
+      <p>With a strong foundation in mathematics (MS, Indiana State University) and software engineering, I specialize in predictive modeling, large-scale data cleaning, and interactive dashboards using tools like Python, SQL, TensorFlow, and Tableau.</p>
+
+      <p>Outside of work, I design geodesic domes, engage in astrophotography, and build robots with my kids, blending creativity with technology to inspire innovative thinking.</p>
+    </div>
+  </div>
+</section>
+
+ 
 <section id="resume" style="background-color: white; padding: 40px; border-radius: 5px; margin: 20px 0;">
   <div style="display: flex; gap: 30px; flex-wrap: wrap;">
 
@@ -134,10 +136,10 @@
 
   </div>
 </section>
+ 
 
 
-
-<section id = "research" style="margin-bottom:40px;">
+<section id = "portfolio" style="margin-bottom:40px;">
  
 <blockquote style="font-style: italic; color: #555; margin: 20px auto; text-align: center; max-width: 600px;">
   "Data science is the art of transforming chaos into clarity, and artificial intelligence is the architect of possibilities yet to be imagined."
@@ -148,17 +150,23 @@
 
   <section id="blog">
     <div class="blog-listing">
-       <article href="/blogs/sentiment-analysis-svm">
+       <article >
+	<a href="/blogs/sentiment-analysis-svm" style="text-decoration: none; color: inherit;">
         <h2>Sentiment Analysis Using SVM</h2>
         <p>A deep dive into binary sentiment classification using the GoEmotions dataset...</p>
+	</a>
       </article>
-       <article href="/blogs/transformers-nlp">
+       <article> 
+	<a href="/blogs/transformers-nlp" style="text-decoration: none; color: inherit;">
         <h2>Transformers in NLP</h2>
         <p>An introduction to transformer-based models like BERT for Natural Language Processing...</p>
+	</a>
       </article>
-      <article href="/blogs/deep-learning">
+      <article>
+	<a href="/blogs/deep-learning" style="text-decoration: none; color: inherit;">
         <h2>Deep Learning Basics</h2>
         <p>Learn the foundations of deep learning and neural networks...</p>
+	</a>
       </article>
 
       <article>
@@ -172,18 +180,29 @@
 
 
 
-<section id="contact" style="background-color: white; padding: 40px; border-radius: 5px; margin: 20px 0;">
+<section id="contact" style="padding: 40px; border-radius: 5px; margin: 20px 0;">
   <div style="display: flex; justify-content: center; align-items: center;">
-    <div style="background-color: #f0f0f0; width: 300px; height: 300px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; text-align: center; font-size: 1rem; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      <p style="margin: 10px 0;"><i class="fas fa-map-marker-alt" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i>Frisco, TX 75035</p>
-      <p style="margin: 10px 0;"><i class="fas fa-phone" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i><a href="tel:+12144299312" style="text-decoration: none; color: black;">+1 214 429 9312</a></p>
-      <p style="margin: 10px 0;"><i class="fab fa-linkedin" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i><a href="https://www.linkedin.com/in/solomon-tessema" target="_blank" style="text-decoration: none; color: black;">linkedin.com/in/solomon-tessema</a></p>
-      <p style="margin: 10px 0;"><i class="fas fa-envelope" style="color: black; font-size: 1.2rem; margin-right: 10px;"></i><a href="mailto:solomon.tessema@outlook.com" style="text-decoration: none; color: black;">solomon.tessema@outlook.com</a></p>
+    <div style="background-color: white; width: 400px; height: 400px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #555; text-align: center; font-size: 1.1rem; padding: 30px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <p style="margin: 10px 0;">
+        <i class="fas fa-map-marker-alt" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>Frisco, TX 75035
+      </p>
+      <p style="margin: 10px 0;">
+        <i class="fas fa-phone" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>
+        <a href="tel:+12144299312" style="text-decoration: none; color: #555;">+1 214 429 9312</a>
+      </p>
+      <p style="margin: 10px 0;">
+        <i class="fab fa-linkedin" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>
+        <a href="https://www.linkedin.com/in/solomon-tessema" target="_blank" style="text-decoration: none; color: #555;">linkedin.com/in/solomon-tessema</a>
+      </p>
+      <p style="margin: 10px 0;">
+        <i class="fas fa-envelope" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>
+        <a href="mailto:solomon.tessema@outlook.com" style="text-decoration: none; color: #555;">solomon.tessema@outlook.com</a>
+      </p>
     </div>
   </div>
-
-
 </section>
+
+
 
 </div>
 
