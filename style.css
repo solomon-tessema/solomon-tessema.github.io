@@ -23,25 +23,40 @@ body {
   background-color: #f8f9fa;
   line-height: 1.6;
 }
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background-color: #1b75bb;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-      text-align: center;
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1b75bb;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(27, 117, 187, 0.8); /* Always slightly transparent */
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5); /* Lighter border to match transparency */
+  padding: 10px 0;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
 
 section {
   padding-top: 70px; /* Adjust based on your nav bar height */
