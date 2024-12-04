@@ -1,16 +1,4 @@
-/*
-color scheme
-from kelly adams website https://www.kellyjadams.com/
-dark blue photo background: #3d6194
-dark blue text background: #0f5ca0
-
-light blue background: #f4faff
-gray text: #464b4b
-hyper link: #83a8de
-
-*/   
-
- html {
+html {
   scroll-behavior: smooth;
 }
 
@@ -43,67 +31,74 @@ nav {
   padding: 10px 0;
   text-align: center;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+margin-bottom:40px;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
   color: white;
+padding:10px;
   font-size: 1.1rem;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color:rgba(27, 117, 187);
+  border:1px solid #f29e3b;
 }
 
+  .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media (min-width: 780px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 
 section {
-  padding-top: 70px; /* Adjust based on your nav bar height */
-  margin-top: -70px; /* Negative margin cancels the padding */
+  margin-top: 70px;  
+  background-color: white;
+  padding-top: 70px;
+  position: relative;
+  scroll-margin-top: 70px; /* Adjust based on your nav bar height */
 }
-    .container {
-      max-width: 70%;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-    .home {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin: 30px 0;
-  
-          background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  border-radius: 5px;
-    }
-.home img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%; /* Makes the image circular */
-  border: 3px solid #ccc; /* Gray border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
-  object-fit: cover; /* Ensures the image scales correctly inside the circle */
-}
-    .bio {
-      max-width: 70%;
-      padding-left: 20px;
-    }
-    .section-title {
-      color: #0074D9;
-      border-bottom: 2px solid #0074D9;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
+article {
+background-color: #e0f7fa;
+padding:20px;
+height:200px;
+margin-bottom:5px;
+}
+
+article:hover {
+  background-color: hsl(187, 100%, 80%);
+}
+
+.profile-picture {
+  border-radius: 50%; 
+}
+
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 100%;
+    height: auto; 
+    border-radius: 50%; /* change this to 0, after having new picture. */
+    aspect-ratio: 1 / 1; 
+  }
+}
+
+
     footer {
       text-align: center;
       padding: 10px 0;
@@ -117,80 +112,4 @@ section {
     footer a:hover {
       text-decoration: underline;
     }
-
-
-/* Light background for Resume */
-#resume {
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  border-radius: 5px;
-}
- 
-#blog {
-      padding: 40px;
-      background-color: #f9f9f9;
-    }
-    .blog-listing {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-      margin: 0 auto;
-    }
-    article {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(25% - 10px);
-      max-width: calc(25% - 10px);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    article:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-    article h2 {
-      color: #0074D9;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    article h2 a {
-      text-decoration: none;
-      color: #0074D9;
-    }
-    article p {
-      color: #555;
-      margin-bottom: 15px;
-    }
-    article a.read-more {
-      text-decoration: none;
-      color: white;
-      background: #0074D9;
-      padding: 10px 20px;
-      border-radius: 5px;
-      display: inline-block;
-    }
-
-article {
-  flex: 0 1 calc(22% - 20px); /* Ensures 4 tiles fit in one row */
-  max-width: calc(22% - 20px);
-}
-
-@media (max-width: 768px) {
-  article {
-    flex: 0 1 calc(30% - 20px); /* 3 tiles per row on medium screens */
-    max-width: calc(30% - 20px);
-  }
-}
-    @media (max-width: 480px) {
-      article {
-        flex: 1 1 calc(98% - 20px);
-        max-width: calc(98% - 20px);
-      }
-    }
- 
-
 
