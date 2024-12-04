@@ -10,13 +10,37 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<script></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function toggleMenu() {
+    const menuLinks = document.querySelector('.menu-links');
+    menuLinks.classList.toggle('show');
+  }
+
+  // Attach the toggleMenu function to the menu icon
+  const menuIcon = document.querySelector('.menu-icon');
+  menuIcon.addEventListener('click', toggleMenu);
+
+  // Hide the menu when a link is clicked
+  const links = document.querySelectorAll('.menu-links a');
+  links.forEach(link => {
+    link.addEventListener('click', function() {
+      const menuLinks = document.querySelector('.menu-links');
+      menuLinks.classList.remove('show');
+    });
+  });
+});
+
+
+</script>
+
 
 </head>
 <body>
 
 <nav>
-  <div>
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <div class="menu-links">
     <a href="#home">Home</a>
     <a href="#resume">Resume</a>
     <a href="#portfolio">Portfolio</a>
@@ -24,6 +48,8 @@
     <a href="#contact">Contact</a>
   </div>
 </nav>
+
+
 
 <div class="container">
 <section  class="w3-row-padding" id="home">
@@ -44,9 +70,9 @@
 </div>
 
 <div class="w3-third" style="display: flex; flex-direction: column; align-items: center;">
-<img src="profile_picture_1a.jpg" alt="Solomon Tessema's Profile Picture" 
-    class="profile-picture" style="width: 100%; object-fit: cover;"
+  <img src="image/profile_picture_2.jpg" alt="Solomon Tessema's Profile Picture" class="profile-picture">
 </div>
+
 </section>
 
 
@@ -144,21 +170,59 @@
  
 
 
-<section id = "portfolio">
-<a href="#portfolio" style="text-decoration:none;"><h1 style="color:#0074D9;">Portfolio</h1></a>
- 
-<blockquote style="font-style: italic; color: #555;background-color:#e0f7fa; margin: 20px auto; text-align: center; width:100%;padding:20px;">
-  "Data science is the art of transforming chaos into clarity. Artificial intelligence is the architect of possibilities yet to be imagined, and visualization is the window through which we marvel at these phenomena."
-</blockquote>
-<div class='tableauPlaceholder' id='viz1732944667233' style='position: relative'><noscript><a href='#'><img alt='GXT Projects Follow up ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GX&#47;GXTProjectsFollowUp&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GXTProjectsFollowUp&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GX&#47;GXTProjectsFollowUp&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1732944667233');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<section id="portfolio" style="background-color: #f9f9f9;">
+  <a href="#portfolio" style="text-decoration:none;">
+    <h1 style="color:#0074D9;">Portfolio</h1>
+  </a>
+
+  <blockquote style="font-style: italic; color: #555;background-color:#e0f7fa; margin: 20px auto; text-align: center; width:100%;padding:20px;">
+    "Data science is the art of transforming chaos into clarity. Artificial intelligence is the architect of possibilities yet to be imagined, and visualization is the window through which we marvel at these phenomena."
+  </blockquote>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <a href="https://public.tableau.com/views/PercentageofCotributionofAgricultureinGDP/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+      <img class="viz" alt='Agriculture GDP Contribution' src='image/tableau_agriculture_1.png' />
+    </a>
+  </div>
+  <div class="w3-third">
+    <a href="https://public.tableau.com/views/CO2EMISSIONSTRAININGVIDEO/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+      <img class="viz" alt='CO2 Per Capita' src='image/tableau_co2_1.png' />
+    </a>
+  </div>
+  <div class="w3-third">
+    <a href="https://public.tableau.com/views/PercentageofCotributionofAgricultureinGDP/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+      <img class="viz" alt='Agriculture GDP Contribution' src='image/tableau_agriculture_1.png' />
+    </a>
+  </div>
+  <div class="w3-third">
+    <a href="https://public.tableau.com/views/CO2EMISSIONSTRAININGVIDEO/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+      <img class="viz" alt='CO2 Per Capita' src='image/tableau_co2_1.png' />
+    </a>
+  </div>
+  <div class="w3-third">
+    <a href="https://public.tableau.com/views/PercentageofCotributionofAgricultureinGDP/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+      <img class="viz" alt='Agriculture GDP Contribution' src='image/tableau_agriculture_1.png' />
+    </a>
+  </div>
+  <div class="w3-third">
+    <a href="https://public.tableau.com/views/CO2EMISSIONSTRAININGVIDEO/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+      <img class="viz" alt='CO2 Per Capita' src='image/tableau_co2_1.png' />
+    </a>
+  </div>
+</div>
+
+
+
 </section>
+
 
 
   <section id="blog">
     <div class="w3-row-padding">
       <div class="w3-third">
       <article>
-	<a href="https://datascienceelements.blogspot.com/2024/12/sentiment-analysis-using-support-vector.html" style="text-decoration: none; color: inherit;">
+	<a href="https://datascienceelements.blogspot.com/2024/12/sentiment-analysis-using-support-vector.html">
         <h2>Sentiment Analysis Using SVM</h2>
         <p>A deep dive into binary sentiment classification using the GoEmotions dataset...</p>
 	</a>
@@ -166,7 +230,7 @@
 	</div>
 	<div class="w3-third">
      <article>
-	<a href="https://datascienceelements.blogspot.com/2018/09/httpsgoo.html" style="text-decoration: none; color: inherit;">
+	<a href="https://datascienceelements.blogspot.com/2018/09/httpsgoo.html">
         <h2>The Role of AI in The Development of Autonomous Vehicles</h2>
         <p>Autonomous vehicles represent one of the most transformative innovations...</p>
 	</a>
@@ -174,7 +238,7 @@
 	</div>
 	<div class="w3-third">
      <article>	
-	<a href="https://datascienceelements.blogspot.com/2017/12/normalization-in-database-systems.html" style="text-decoration: none; color: inherit;">
+	<a href="https://datascienceelements.blogspot.com/2017/12/normalization-in-database-systems.html">
         <h2>Normailization in Database Systems</h2>
         <p>In database systems, normalization is the organization of data to reduce redundancy and improve....</p>
 	</a>
@@ -185,7 +249,7 @@
     <div class="w3-row-padding">
       <div class="w3-third">
       <article>
-	<a href="https://datascienceelements.blogspot.com/2016/08/blog-post_19.html" style="text-decoration: none; color: inherit;">
+	<a href="https://datascienceelements.blogspot.com/2016/08/blog-post_19.html">
         <h2>Using Time-Series Analysis for Crime Prediction and Insights</h2>
         <p>Time-series analysis (TSA) is an essential statistical method for studying temporal data...</p>
 	</a>
@@ -193,7 +257,7 @@
 	</div>
 	<div class="w3-third">
      <article>
-	<a href="https://datascienceelements.blogspot.com/2016/08/var-divelement-document.html" style="text-decoration: none; color: inherit;">
+	<a href="https://datascienceelements.blogspot.com/2016/08/var-divelement-document.html">
         <h2>Predicting Forest Fires Using Regression</h2>
         <p>Forest fires are a growing concern globally, as their frequency and intensity have been increasing in recent years...</p>
 	</a>
@@ -201,9 +265,9 @@
 	</div>
 	<div class="w3-third">
      <article>	
-	<a href="https://datascienceelements.blogspot.com/2016/08/blog-post_17.html" style="text-decoration: none; color: inherit;">
-        <h2>Monthly Produce Sales Forecasting Using Long Short-Term Memory</h2>
-        <p>Univariate time-series forecasting focuses on predicting future values of a single variable....</p>
+	<a href="https://datascienceelements.blogspot.com/2016/08/blog-post_17.html">
+        <h2>Sales Forecasting Using Long Short-Term Memory</h2>
+        <p>Univariate time-series forecasting focuses on predicting futuree....</p>
 	</a>
      </article>
 </div>
@@ -216,30 +280,30 @@
   <div style="display: flex; justify-content: center; align-items: center;">
     <div style="background-color: #f9f9f9; width: 400px; height: 400px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #555; text-align: center; font-size: 1.1rem; padding: 30px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <p style="margin: 10px 0;">
-        <i class="fas fa-map-marker-alt" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>Frisco, TX 75035
+        <i class="fas fa-map-marker-alt"></i>Frisco, TX 75035
       </p>
       <p style="margin: 10px 0;">
-        <i class="fas fa-phone" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>
-        <a href="tel:+12144299312" style="text-decoration: none; color: #555;">+1 214 429 9312</a>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+12144299312">+1 214 429 9312</a>
       </p>
       <p style="margin: 10px 0;">
-        <i class="fab fa-linkedin" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>
-        <a href="https://www.linkedin.com/in/solomon-tessema" target="_blank" style="text-decoration: none; color: #555;">linkedin.com/in/solomon-tessema</a>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/solomon-tessema" target="_blank">linkedin.com/in/solomon-tessema</a>
       </p>
       <p style="margin: 10px 0;">
-        <i class="fas fa-envelope" style="color: #555; font-size: 1.4rem; margin-right: 10px;"></i>
-        <a href="mailto:solomon.tessema@outlook.com" style="text-decoration: none; color: #555;">solomon.tessema@outlook.com</a>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:solomon.tessema@outlook.com">solomon.tessema@outlook.com</a>
       </p>
     </div>
   </div>
 </section>
-
 
 </div>
 
 
 
 <footer>
+  
   <p>&copy; 2024 Solomon Tessema</p>
 </footer>
 
