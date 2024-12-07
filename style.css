@@ -98,6 +98,8 @@ section {
   scroll-margin-top: 70px; /* Adjust based on your nav bar height */
 }
 
+
+
 article {
 background-color: #e0f7fa;
 padding:20px;
@@ -151,3 +153,26 @@ margin-right: 10px;
     display: none;
   }
 }
+
+
+#GetInTouch {
+align-items: center; 
+text-align: center; 
+background-color: #f7f7f7; 
+padding: 40px; 
+margin-top: 40px;
+          }
+
+iframe {
+     height: 800px; 
+    }
+
+
+  @media (max-width: 768px) {
+    #GetInTouch {
+padding:0px; 
+          }
+    iframe {
+      height: 800px; 
+    }
+  }
